@@ -12,7 +12,7 @@ pipeline {
         sh 'cd Jenkins-Zero-To-Hero-main/java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
       }
     }
-    stage('Static Code Analysis') {
+    stage ('Static Code Analysis') {
       environment {
         SONAR_URL = "http://100.25.151.128:9000"
       }
@@ -22,7 +22,7 @@ pipeline {
         }
       }
     }
-    stage('Build and Push Docker Image') {
+    stage ('Build and Push Docker Image') {
       environment {
         DOCKER_IMAGE = "ashwinigawhale/ultimate-cicd:${BUILD_NUMBER}"
         // DOCKERFILE_LOCATION = "Jenkins-Zero-To-Hero-main/java-maven-sonar-argocd-helm-k8s/spring-boot-app/Dockerfile"
@@ -37,7 +37,7 @@ pipeline {
             }
         }
       }
-         stage('Update Deployment File') {
+      stage ('Update Deployment File') {
         environment {
             GIT_REPO_NAME = "Project-0732"
             GIT_USER_NAME = "gawhale-ashwini"
