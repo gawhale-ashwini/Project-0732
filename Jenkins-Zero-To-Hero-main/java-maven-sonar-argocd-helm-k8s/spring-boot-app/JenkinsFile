@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage ('Build') {
       steps {
-        sh 'mvn clean package'
+        sh 'cd /Jenkins-Zero-To-Hero-main/java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
       }
     }
     stage ('Deploy') {
