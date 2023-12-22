@@ -9,7 +9,7 @@ pipeline {
         sh 'pwd' // Print current directory
         sh 'ls -la' // List files in the current directory
 
-        sh 'cd /Jenkins-Zero-To-Hero-main/java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
+        sh 'cd Jenkins-Zero-To-Hero-main/java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
       }
     }
     stage ('Deploy') {
