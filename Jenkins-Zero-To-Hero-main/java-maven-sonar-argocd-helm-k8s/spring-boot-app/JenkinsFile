@@ -75,4 +75,4 @@ def sendSlackNotifcation()
         slackSend( channel: "#devops-project", token: 'slack', color : "danger", message: "${buildSummary}")
     }
     }
-}
+
