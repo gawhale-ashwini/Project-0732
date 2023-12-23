@@ -52,7 +52,7 @@ pipeline {
                 whoami
                 pwd
                 cd
-                cd /workspace/Project/Jenkins-Zero-To-Hero-main/java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests
+                cd workspace/Project/Jenkins-Zero-To-Hero-main/java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests
                 pwd
                 git init 
                 git add .
