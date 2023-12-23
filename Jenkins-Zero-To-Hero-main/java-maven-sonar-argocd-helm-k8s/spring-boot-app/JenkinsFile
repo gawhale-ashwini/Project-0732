@@ -68,11 +68,11 @@ def sendSlackNotifcation()
 {
     if ( currentBuild.currentResult == "SUCCESS" ) {
         buildSummary = "Job_name: ${env.JOB_NAME}\n Build_id: ${env.BUILD_ID} \n Status: *SUCCESS*\n Build_url: ${BUILD_URL}\n Job_url: ${JOB_URL} \n"
-        slackSend( channel: "#devsecops-project", token: 'a', color: 'good', message: "${buildSummary}")
+        slackSend( channel: "#devops-project", token: 'slack', color: 'good', message: "${buildSummary}")
     }
     else {
         buildSummary = "Job_name: ${env.JOB_NAME}\n Build_id: ${env.BUILD_ID} \n Status: *FAILURE*\n Build_url: ${BUILD_URL}\n Job_url: ${JOB_URL}\n  \n "
-        slackSend( channel: "#devsecops-project", token: 'a', color : "danger", message: "${buildSummary}")
+        slackSend( channel: "#devops-project", token: 'slack', color : "danger", message: "${buildSummary}")
     }
     }
 }
