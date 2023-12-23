@@ -50,7 +50,7 @@ pipeline {
                 BUILD_NUMBER=${BUILD_NUMBER}
                 sed -i "s/replaceImageTag/${BUILD_NUMBER}/g" Jenkins-Zero-To-Hero-main/java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
 
-                cd Jenkins-Zero-To-Hero-main/java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/
+                cd /var/lib/jenkins/workspace/Project/Jenkins-Zero-To-Hero-main/java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests
                 git init 
                 git add .
                 
