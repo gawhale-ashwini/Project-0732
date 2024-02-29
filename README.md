@@ -28,8 +28,9 @@ lines by using comment.
 
 
 ●	Create and edit root.net
+```bash
 nano /var/named/root.net
-
+```
 ![image](https://github.com/gawhale-ashwini/Project-0732/assets/149654320/678daeac-c2cc-4630-b9d4-9e5ed372398f)
 
 ●	Edit resolv.conf file
@@ -37,8 +38,9 @@ nano /var/named/root.net
 ![image](https://github.com/gawhale-ashwini/Project-0732/assets/149654320/66d4d01d-fa68-4769-a1cf-faadf2fdc805)
 
 ●	Now edit named.ca file
+```bash
 nano /var/named/named.ca
-
+```
 ![image](https://github.com/gawhale-ashwini/Project-0732/assets/149654320/082ba105-7d74-4c89-998d-612aeb9ae92a)
 
 ●	systemctl restart named
